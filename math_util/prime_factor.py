@@ -23,7 +23,7 @@ class PrimeFactor(object):
         if self.num < 1:
             raise PrimeFactorError('Value less than one is not accepted')
         else:
-            prime_numbers = rwh(self.num+1)
+            prime_numbers = rwh(self.num)
             num = self.num
             count = 0
             while num is not 1:
