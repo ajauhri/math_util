@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to math_util’s documentation! &mdash; math_util v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="math_util v1.0 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">math_util v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-math-util-s-documentation">
+<h1>Welcome to math_util&#8217;s documentation!<a class="headerlink" href="#welcome-to-math-util-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+<span class="target" id="module-prime_factors"></span><dl class="class">
+<dt id="prime_factors.PrimeFactors">
+<em class="property">class </em><tt class="descclassname">prime_factors.</tt><tt class="descname">PrimeFactors</tt><big>(</big><em>num=0</em>, <em>prime_factors=</em><span class="optional">[</span><span class="optional">]</span><big>)</big><a class="reference internal" href="_modules/prime_factors.html#PrimeFactors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prime_factors.PrimeFactors" title="Permalink to this definition">¶</a></dt>
+<dd><p>An easy-to-use Python wrapper to print prime factors of an integer</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math_util</span> <span class="kn">import</span> <span class="n">PrimeFactors</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prime_factors</span> <span class="o">=</span> <span class="n">PrimeFactors</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span> <span class="o">=</span> <span class="n">prime_factors</span><span class="o">.</span><span class="n">compute_prime_factors</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">primt</span> <span class="nb">list</span>
+<span class="go">[3,5]</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="prime_factors.PrimeFactors.compute_prime_factors">
+<tt class="descname">compute_prime_factors</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/prime_factors.html#PrimeFactors.compute_prime_factors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prime_factors.PrimeFactors.compute_prime_factors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the prime fators for a given integer.
+:return: List of prime factors
+:rtype: list
+:raises PrimeFactor Error: if something unexpected happens</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="prime_factors.PrimeFactorsError">
+<em class="property">exception </em><tt class="descclassname">prime_factors.</tt><tt class="descname">PrimeFactorsError</tt><big>(</big><em>error</em><big>)</big><a class="reference internal" href="_modules/prime_factors.html#PrimeFactorsError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prime_factors.PrimeFactorsError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for errors in the <tt class="xref py py-mod docutils literal"><span class="pre">compute_prime_factors</span></tt> module.</p>
+<p>Mehtods of the <tt class="xref py py-class docutils literal"><span class="pre">PrimeFactor</span></tt> raise this when unexpected behaviour occurs.</p>
+</dd></dl>
+
+<span class="target" id="module-prime_numbers"></span><dl class="class">
+<dt id="prime_numbers.PrimeNumbers">
+<em class="property">class </em><tt class="descclassname">prime_numbers.</tt><tt class="descname">PrimeNumbers</tt><big>(</big><em>lim</em><big>)</big><a class="headerlink" href="#prime_numbers.PrimeNumbers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Python wrapper to print prime number &lt;= lim</p>
+<p>An easy-to-use Python wrapper to print prime factors of an integer</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math_util</span> <span class="kn">import</span> <span class="n">PrimeNumebers</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">prime_numbers</span> <span class="o">=</span> <span class="n">PrimeNumbers</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span> <span class="o">=</span> <span class="n">prime_numbers</span><span class="o">.</span><span class="n">rwh</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="nb">list</span>
+<span class="go">[2,3,5,7,11]</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="prime_numbers.PrimeNumbers.rwh">
+<tt class="descname">rwh</tt><big>(</big><big>)</big><a class="headerlink" href="#prime_numbers.PrimeNumbers.rwh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints prime numbers &lt;= lim using sieve algorithm
+:return: List of prime numbers
+:rtype: list</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to math_util&#8217;s documentation!</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="#">math_util v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Abhinav Jauhri.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
