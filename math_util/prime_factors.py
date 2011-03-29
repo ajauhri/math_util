@@ -2,7 +2,7 @@
 # Copyright 2011 Abhinav Jauhri
 #
 # This is free software, licensed under the Lesser Affero General
-# Public License, available in the accompanying LICENSE.rtf file.
+# Public License, available in the accompanying LICENSE.txt file.
  
 
 from prime_numbers import PrimeNumbers
@@ -39,17 +39,15 @@ class PrimeFactors(object):
     >>> primt list
     [3,5]
     """
-    def __init__(self, num=0, prime_factors=[]):
+    def __init__(self, num=0):
         """
         Create a new :class:`PrimeFactors` object using the given `num`.
 
         :param num: Integer for which prime factors have to be generated
         :type num: int
-        :param prime_factors: Array of prime factors
-        :type prime_factors: list
         """
         self.num = num
-        self.prime_factors = prime_factors
+        self.prime_factors = list()
 
     def compute_prime_factors(self):
         """

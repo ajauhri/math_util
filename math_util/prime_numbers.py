@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # Copyright (C) 2011 Abhinav Jauhri
 # This is free software, licensed under the Lesser Affero General
-# Public License, available in the accompanying LICENSE.rtf file. 
+# Public License, available in the accompanying LICENSE.txt file. 
 
 __all__ = ['PrimeNumbers']
 
