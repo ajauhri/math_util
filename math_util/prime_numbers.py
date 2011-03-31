@@ -34,6 +34,7 @@ class PrimeNumbers(object):
         :return: List of prime numbers
         :rtype: list
         """
+        ## http://stackoverflow.com/questions/2068372/fastest-way-to-list-all-primes-below-n-in-python/3035188#3035188
         if self.lim is 1:
             return []
         self.lim = self.lim+1

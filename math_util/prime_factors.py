@@ -36,7 +36,7 @@ class PrimeFactors(object):
     >>> from math_util import PrimeFactors
     >>> prime_factors = PrimeFactors(15)
     >>> list = prime_factors.compute_prime_factors()
-    >>> primt list
+    >>> print list
     [3,5]
     """
     def __init__(self, num=0):
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     def main(argv):
         if len(argv) is not 2:
-            print main.__doc__
+            print PrimeFactors.__doc__
             sys.exit(1)
         try:
             obj = PrimeFactors(int(argv[1]))
