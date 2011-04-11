@@ -4,7 +4,6 @@ import unittest
 
 from prime_factors import PrimeFactors, PrimeFactorsError
 
-
 class Test(unittest.TestCase):
 
         def test_input_as_one(self):

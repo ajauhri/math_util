@@ -1,6 +1,4 @@
-'''
-Abhinav Jauhri
-'''
+
 from distutils.core import setup
 import sys
 

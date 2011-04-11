@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import unittest
 
 from prime_numbers import PrimeNumbers
