@@ -5,6 +5,7 @@ import unittest
 from prime_numbers import PrimeNumbers
 
 class Test(unittest.TestCase):
+
     def test_prime_numbers(self):
         prime = PrimeNumbers(11)
         self.assertEqual(prime.rwh(),[2,3,5,7,11])

@@ -3,7 +3,6 @@
 #
 # This is free software, licensed under the GNU LESSER GENERAL PUBLIC LICENSE
 # Public License, available in the accompanying LICENSE.txt file.
- 
 
 from prime_numbers import PrimeNumbers
 

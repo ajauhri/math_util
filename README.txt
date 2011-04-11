@@ -2,7 +2,6 @@ math_util 1.0
 March 18, 2011
 
 README
-
 ----------------------
 A simple python package with the following functionalities:
   - Prime number generation <= `n`: Computes prime numbers using a sieve technique.

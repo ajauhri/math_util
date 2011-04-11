@@ -4,8 +4,9 @@ import unittest
 
 from prime_factors import PrimeFactors, PrimeFactorsError
 
+
 class Test(unittest.TestCase):
-        """Unit tests for googlemaps."""
+
         def test_input_as_one(self):
             pfactor = PrimeFactors(1)
             self.assertEqual(pfactor.compute_prime_factors(), [])

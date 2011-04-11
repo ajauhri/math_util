@@ -5,7 +5,6 @@
 
 __all__ = ['PrimeNumbers']
 
-
 class PrimeNumbers(object):
     """
     Python wrapper to print prime number <= lim
