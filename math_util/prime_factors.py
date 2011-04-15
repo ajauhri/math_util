@@ -8,7 +8,6 @@ from prime_numbers import PrimeNumbers
 
 __all__ = ['PrimeFactors', 'PrimeFactorsError']
 
-
 class PrimeFactorsError(Exception):
     """Base class for errors in the :mod:`compute_prime_factors` module.
 
@@ -38,14 +37,14 @@ class PrimeFactors(object):
     >>> print list
     [3,5]
     """
-    def __init__(self, num=0):
+    def __init__(self, integer=0):
         """
         Create a new :class:`PrimeFactors` object using the given `num`.
 
         :param num: Integer for which prime factors have to be generated
         :type num: int
         """
-        self.num = num
+        self.integer = integer
         self.prime_factors = list()
 
     def compute_prime_factors(self):
@@ -55,30 +54,22 @@ class PrimeFactors(object):
         :rtype: list
         :raises PrimeFactor Error: if something unexpected happens
         """
-        if self.num < 1:
+        if self.integer < 1:
             raise PrimeFactorsError('Value less than one is not accepted')
         else:
-            obj = PrimeNumbers(self.num)
-            prime_numbers = obj.rwh()
-            num = self.num
+            prime_number_generator = PrimeNumbers(self.integer)
+            prime_numbers = prime_number_generator.sieve_of_atkin()
             count = 0
-            while num is not 1:
-                while num%prime_numbers[count] is 0:
-                    num /= prime_numbers[count]
+            while self.integer is not 1:
+                while self.integer  % prime_numbers[count] is 0:
+                    self.integer /= prime_numbers[count]
                     self.prime_factors.append(prime_numbers[count])
                 count = count + 1
         return self.prime_factors
-
+    
     
 if __name__ == "__main__":
     import sys
-    """
-    Prints all prime factors for a given integer.
-
-    Usage:
-         prime_factors 15
-    """
-
     def main(argv):
         if len(argv) is not 2:
             print PrimeFactors.__doc__
@@ -91,5 +82,4 @@ if __name__ == "__main__":
             sys.exit(1) 
 
     main(sys.argv)
-    
-    
+     
