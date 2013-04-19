@@ -1,4 +1,3 @@
-
 from distutils.core import setup
 import sys
 
@@ -10,8 +9,8 @@ setup(name='prime_factors',
             version='1.0',
             author='Abhinav Jauhri',
             author_email='abhinav.jauhri@gmail.com',
-            url='https://github.com/aj910martin/math_util',
-            download_url='https://github.com/aj910martin/math_util',
+            url='https://github.com/ajauhri/math_util',
+            download_url='https://github.com/ajauhri/math_util',
             description='Print prime factors in Python',
             long_description=prime_factors.__doc__,
             package_dir={'': 'math_util'},
